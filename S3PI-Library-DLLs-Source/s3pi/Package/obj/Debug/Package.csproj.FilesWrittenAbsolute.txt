@@ -1,0 +1,5 @@
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi/Package/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi/Package/bin/Debug/s3pi.Package.dll.mdb
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi/Package/bin/Debug/s3pi.Package.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi/Package/obj/Debug/s3pi.Package.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi/Package/obj/Debug/s3pi.Package.dll.mdb

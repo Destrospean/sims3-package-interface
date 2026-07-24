@@ -1,0 +1,7 @@
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/StblResource/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/StblResource/bin/Debug/s3pi.StblResource.dll.mdb
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/StblResource/bin/Debug/s3pi.StblResource.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/StblResource/obj/Debug/s3pi.StblResource.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/StblResource/obj/Debug/s3pi.StblResource.dll.mdb
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/StblResource/bin/Debug/s3pi.Settings.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/StblResource/bin/Debug/s3pi.Settings.dll.mdb

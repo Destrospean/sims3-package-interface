@@ -1,0 +1,8 @@
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/Helpers/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/Helpers/bin/Debug/Helpers/Notepad.helper
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/Helpers/bin/Debug/Helpers/MSPaint.helper
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/Helpers/bin/Debug/Helpers/Helpers.txt
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/Helpers/bin/Debug/s3pi.Helpers.dll.mdb
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/Helpers/bin/Debug/s3pi.Helpers.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/Helpers/obj/Debug/s3pi.Helpers.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/Helpers/obj/Debug/s3pi.Helpers.dll.mdb

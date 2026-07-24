@@ -1,0 +1,10 @@
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/DDSPanel/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/DDSPanel/obj/Debug/System.Windows.Forms.DDSPanel.resources
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/DDSPanel/obj/Debug/System.Windows.Forms.Properties.Resources.resources
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/DDSPanel/bin/Debug/squishinterface_Win32.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/DDSPanel/bin/Debug/squishinterface_x64.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/DDSPanel/bin/Debug/ViewDDS-Licence.htm
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/DDSPanel/bin/Debug/DDSPanel.dll.mdb
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/DDSPanel/bin/Debug/DDSPanel.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/DDSPanel/obj/Debug/DDSPanel.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/DDSPanel/obj/Debug/DDSPanel.dll.mdb

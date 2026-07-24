@@ -1,0 +1,6 @@
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/CS System Classes/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/CS System Classes/bin/Debug/gpl-3.0.txt
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/CS System Classes/bin/Debug/System.Custom.dll.mdb
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/CS System Classes/bin/Debug/System.Custom.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/CS System Classes/obj/Debug/System.Custom.dll
+/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/CS System Classes/obj/Debug/System.Custom.dll.mdb
