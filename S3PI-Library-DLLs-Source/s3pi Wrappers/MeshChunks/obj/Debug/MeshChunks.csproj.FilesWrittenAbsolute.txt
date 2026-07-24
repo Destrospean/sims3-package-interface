@@ -1,5 +1,0 @@
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/MeshChunks/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/MeshChunks/bin/Debug/s3pi.MeshChunks.dll.mdb
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/MeshChunks/bin/Debug/s3pi.MeshChunks.dll
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/MeshChunks/obj/Debug/s3pi.MeshChunks.dll
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/MeshChunks/obj/Debug/s3pi.MeshChunks.dll.mdb

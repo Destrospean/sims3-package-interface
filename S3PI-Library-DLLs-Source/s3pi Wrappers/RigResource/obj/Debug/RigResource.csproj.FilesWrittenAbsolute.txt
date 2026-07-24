@@ -1,5 +1,0 @@
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/RigResource/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/RigResource/bin/Debug/s3pi.RigResource.dll.mdb
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/RigResource/bin/Debug/s3pi.RigResource.dll
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/RigResource/obj/Debug/s3pi.RigResource.dll
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/RigResource/obj/Debug/s3pi.RigResource.dll.mdb

@@ -1,6 +1,0 @@
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/CustomForms/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/CustomForms/obj/Debug/System.Windows.Forms.CopyableMessageBoxInternal.resources
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/CustomForms/bin/Debug/s3pi.CustomForms.dll.mdb
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/CustomForms/bin/Debug/s3pi.CustomForms.dll
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/CustomForms/obj/Debug/s3pi.CustomForms.dll
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/CustomForms/obj/Debug/s3pi.CustomForms.dll.mdb

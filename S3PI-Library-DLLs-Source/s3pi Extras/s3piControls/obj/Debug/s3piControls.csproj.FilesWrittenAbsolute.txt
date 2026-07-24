@@ -1,8 +1,0 @@
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/s3piControls/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/s3piControls/obj/Debug/System.Windows.Forms.ResourceTypeCombo.resources
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/s3piControls/obj/Debug/System.Windows.Forms.TGIBlockCombo.resources
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/s3piControls/obj/Debug/System.Windows.Forms.TGIBlockListEditorForm.MainForm.resources
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/s3piControls/bin/Debug/s3pi.Controls.dll.mdb
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/s3piControls/bin/Debug/s3pi.Controls.dll
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/s3piControls/obj/Debug/s3pi.Controls.dll
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Extras/s3piControls/obj/Debug/s3pi.Controls.dll.mdb

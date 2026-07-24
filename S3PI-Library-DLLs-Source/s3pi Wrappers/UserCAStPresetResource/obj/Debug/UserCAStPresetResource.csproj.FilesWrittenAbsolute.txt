@@ -1,5 +1,0 @@
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/UserCAStPresetResource/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/UserCAStPresetResource/bin/Debug/s3pi.UserCAStPreset.dll.mdb
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/UserCAStPresetResource/bin/Debug/s3pi.UserCAStPreset.dll
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/UserCAStPresetResource/obj/Debug/s3pi.UserCAStPreset.dll
-/home/andrew/Projects/The Sims 3 Projects/Source Code/sims3-package-interface/S3PI-Library-DLLs-Source/s3pi Wrappers/UserCAStPresetResource/obj/Debug/s3pi.UserCAStPreset.dll.mdb
