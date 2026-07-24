@@ -740,33 +740,73 @@ namespace s3pi.GenericRCOLResource
             typeRegistry = new Dictionary<uint, Type>();
             tagRegistry = new Dictionary<string, Type>();
 
-            string folder = Path.GetDirectoryName(typeof(GenericRCOLResourceHandler).Assembly.Location);
-            foreach (string path in Directory.GetFiles(folder, "*.dll"))
+            try
             {
-                //Protect load of DLL
-                try
+                string folder = Path.GetDirectoryName(typeof(GenericRCOLResourceHandler).Assembly.Location);
+                foreach (string path in Directory.GetFiles(folder, "*.dll"))
                 {
-                    Assembly dotNetDll = Assembly.LoadFile(path);
-                    Type[] types = dotNetDll.GetTypes();
-                    foreach (Type t in types)
+                    //Protect load of DLL
+                    try
                     {
-                        if (t.IsAbstract) continue;
-                        if (!t.IsSubclassOf(typeof(ARCOLBlock))) continue;
-
-                        //Protect instantiating class
-                        try
+                        Assembly dotNetDll = Assembly.LoadFile(path);
+                        Type[] types = dotNetDll.GetTypes();
+                        foreach (Type t in types)
                         {
-                            ConstructorInfo ctor = t.GetConstructor(new Type[] { typeof(int), typeof(EventHandler), typeof(Stream), });
-                            if (ctor == null) continue;
+                            if (t.IsAbstract) continue;
+                            if (!t.IsSubclassOf(typeof(ARCOLBlock))) continue;
 
-                            ARCOLBlock arb = (ARCOLBlock)ctor.Invoke(new object[] { 0, null, null });
-                            if (!typeRegistry.ContainsKey(arb.ResourceType)) typeRegistry.Add(arb.ResourceType, arb.GetType());
-                            if (!tagRegistry.ContainsKey(arb.Tag)) tagRegistry.Add(arb.Tag, arb.GetType());
+                            //Protect instantiating class
+                            try
+                            {
+                                ConstructorInfo ctor = t.GetConstructor(new Type[] { typeof(int), typeof(EventHandler), typeof(Stream), });
+                                if (ctor == null) continue;
+
+                                ARCOLBlock arb = (ARCOLBlock)ctor.Invoke(new object[] { 0, null, null });
+                                if (!typeRegistry.ContainsKey(arb.ResourceType)) typeRegistry.Add(arb.ResourceType, arb.GetType());
+                                if (!tagRegistry.ContainsKey(arb.Tag)) tagRegistry.Add(arb.Tag, arb.GetType());
+                            }
+                            catch
+                            {
+                            }
                         }
-                        catch { }
+                    }
+                    catch
+                    {
                     }
                 }
-                catch { }
+            }
+            catch
+            {
+                foreach (Assembly dotNetDll in AppDomain.CurrentDomain.GetAssemblies())
+                {
+                    //Protect load of DLL
+                    try
+                    {
+                        Type[] types = dotNetDll.GetTypes();
+                        foreach (Type t in types)
+                        {
+                            if (t.IsAbstract) continue;
+                            if (!t.IsSubclassOf(typeof(ARCOLBlock))) continue;
+
+                            //Protect instantiating class
+                            try
+                            {
+                                ConstructorInfo ctor = t.GetConstructor(new Type[] { typeof(int), typeof(EventHandler), typeof(Stream), });
+                                if (ctor == null) continue;
+
+                                ARCOLBlock arb = (ARCOLBlock)ctor.Invoke(new object[] { 0, null, null });
+                                if (!typeRegistry.ContainsKey(arb.ResourceType)) typeRegistry.Add(arb.ResourceType, arb.GetType());
+                                if (!tagRegistry.ContainsKey(arb.Tag)) tagRegistry.Add(arb.Tag, arb.GetType());
+                            }
+                            catch
+                            {
+                            }
+                        }
+                    }
+                    catch
+                    {
+                    }
+                }
             }
 
             StringReader sr = new StringReader(Resources.RCOLResources);
