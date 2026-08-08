@@ -105,7 +105,4 @@
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
-  <PropertyGroup>
-    <PreBuildEvent>"$(SolutionDir)CreateAssemblyVersion\$(OutDir)CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
-  </PropertyGroup>
 </Project>

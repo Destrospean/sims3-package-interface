@@ -96,7 +96,4 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <PropertyGroup>
-    <PreBuildEvent>"$(SolutionDir)CreateAssemblyVersion\$(OutDir)CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
-  </PropertyGroup>
 </Project>

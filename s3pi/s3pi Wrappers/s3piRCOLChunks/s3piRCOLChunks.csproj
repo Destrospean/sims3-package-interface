@@ -75,7 +75,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <PropertyGroup>
-    <PreBuildEvent>"$(SolutionDir)CreateAssemblyVersion\$(OutDir)CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
-  </PropertyGroup>
 </Project>
