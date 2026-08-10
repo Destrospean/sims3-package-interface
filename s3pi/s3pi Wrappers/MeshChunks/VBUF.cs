@@ -288,17 +288,17 @@ namespace meshExpImp.ModelBlocks
                 case VRTF.ElementFormat.Short2:
                     for (int i = 0; i < output.Length; i++)
                     {
-                        output[i] += (float)BitConverter.ToUInt16(element, i * sizeof(ushort)) * scale;
+                        output[i] += (float)BitConverter.ToUInt16(element, i * sizeof(short)) * scale;
                     }
                     break;
                 case VRTF.ElementFormat.Short4:
                     for (int i = 0; i < output.Length; i++)
-                        output[i] += (float)BitConverter.ToUInt16(element, i * sizeof(ushort)) / ushort.MaxValue;
+                        output[i] += (float)BitConverter.ToUInt16(element, i * sizeof(short)) / short.MaxValue;
                     break;
                 case VRTF.ElementFormat.Short4_DropShadow:
                     for (int i = 0; i < output.Length - 1; i++)
-                        output[i] += (float)BitConverter.ToUInt16(element, i * sizeof(ushort)) / ushort.MaxValue;
-                    output[output.Length - 1] += (float)BitConverter.ToUInt16(element, (output.Length - 1) * sizeof(ushort)) / 511;
+                        output[i] += (float)BitConverter.ToUInt16(element, i * sizeof(short)) / short.MaxValue;
+                    output[output.Length - 1] += (float)BitConverter.ToUInt16(element, (output.Length - 1) * sizeof(short)) / 511;
                     break;
                 default:
                     ReadFloatData(data, layout, ref output);
