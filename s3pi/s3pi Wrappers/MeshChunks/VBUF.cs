@@ -191,6 +191,16 @@ namespace meshExpImp.ModelBlocks
             }
         }
 
+        public static float GetFloatValue(ushort value, float scale = 1)
+        {
+            int unscaled = value;
+            if (unscaled > short.MaxValue)
+            {
+                unscaled -= 1 + ushort.MaxValue;
+            }
+            return unscaled * scale;
+        }
+
         public Vertex[] GetVertices(MLOD.Mesh mesh, VRTF vrtf, float[] uvscales)
         {
             return GetVertices(vrtf, mesh.StreamOffset, mesh.VertexCount, uvscales);
@@ -278,6 +288,7 @@ namespace meshExpImp.ModelBlocks
             }
             return verts;
         }
+
         public static void ReadUVData(byte[] data, VRTF.ElementLayout layout, ref float[] output, float scale)
         {
             byte[] element = new byte[VRTF.ByteSizeFromFormat(layout.Format)];
@@ -288,17 +299,17 @@ namespace meshExpImp.ModelBlocks
                 case VRTF.ElementFormat.Short2:
                     for (int i = 0; i < output.Length; i++)
                     {
-                        output[i] += (float)BitConverter.ToUInt16(element, i * sizeof(short)) * scale;
+                        output[i] += GetFloatValue(BitConverter.ToUInt16(element, i * sizeof(short)), scale);
                     }
                     break;
                 case VRTF.ElementFormat.Short4:
                     for (int i = 0; i < output.Length; i++)
-                        output[i] += (float)BitConverter.ToUInt16(element, i * sizeof(short)) / short.MaxValue;
+                        output[i] += GetFloatValue(BitConverter.ToUInt16(element, i * sizeof(short)), 1f / short.MaxValue);
                     break;
                 case VRTF.ElementFormat.Short4_DropShadow:
                     for (int i = 0; i < output.Length - 1; i++)
-                        output[i] += (float)BitConverter.ToUInt16(element, i * sizeof(short)) / short.MaxValue;
-                    output[output.Length - 1] += (float)BitConverter.ToUInt16(element, (output.Length - 1) * sizeof(short)) / 511;
+                        output[i] += GetFloatValue(BitConverter.ToUInt16(element, i * sizeof(short)), 1f / short.MaxValue);
+                    output[output.Length - 1] += GetFloatValue(BitConverter.ToUInt16(element, (output.Length - 1) * sizeof(short)), 1f / 511);
                     break;
                 default:
                     ReadFloatData(data, layout, ref output);
