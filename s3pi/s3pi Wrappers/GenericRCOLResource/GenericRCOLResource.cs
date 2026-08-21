@@ -740,72 +740,34 @@ namespace s3pi.GenericRCOLResource
             typeRegistry = new Dictionary<uint, Type>();
             tagRegistry = new Dictionary<string, Type>();
 
-            try
+            foreach (Assembly dotNetDll in AppDomain.CurrentDomain.GetAssemblies())
             {
-                string folder = Path.GetDirectoryName(typeof(GenericRCOLResourceHandler).Assembly.Location);
-                foreach (string path in Directory.GetFiles(folder, "*.dll"))
+                //Protect load of DLL
+                try
                 {
-                    //Protect load of DLL
-                    try
+                    Type[] types = dotNetDll.GetTypes();
+                    foreach (Type t in types)
                     {
-                        Assembly dotNetDll = Assembly.LoadFile(path);
-                        Type[] types = dotNetDll.GetTypes();
-                        foreach (Type t in types)
+                        if (t.IsAbstract) continue;
+                        if (!t.IsSubclassOf(typeof(ARCOLBlock))) continue;
+
+                        //Protect instantiating class
+                        try
                         {
-                            if (t.IsAbstract) continue;
-                            if (!t.IsSubclassOf(typeof(ARCOLBlock))) continue;
+                            ConstructorInfo ctor = t.GetConstructor(new Type[] { typeof(int), typeof(EventHandler), typeof(Stream), });
+                            if (ctor == null) continue;
 
-                            //Protect instantiating class
-                            try
-                            {
-                                ConstructorInfo ctor = t.GetConstructor(new Type[] { typeof(int), typeof(EventHandler), typeof(Stream), });
-                                if (ctor == null) continue;
-
-                                ARCOLBlock arb = (ARCOLBlock)ctor.Invoke(new object[] { 0, null, null });
-                                if (!typeRegistry.ContainsKey(arb.ResourceType)) typeRegistry.Add(arb.ResourceType, arb.GetType());
-                                if (!tagRegistry.ContainsKey(arb.Tag)) tagRegistry.Add(arb.Tag, arb.GetType());
-                            }
-                            catch
-                            {
-                            }
+                            ARCOLBlock arb = (ARCOLBlock)ctor.Invoke(new object[] { 0, null, null });
+                            if (!typeRegistry.ContainsKey(arb.ResourceType)) typeRegistry.Add(arb.ResourceType, arb.GetType());
+                            if (!tagRegistry.ContainsKey(arb.Tag)) tagRegistry.Add(arb.Tag, arb.GetType());
                         }
-                    }
-                    catch
-                    {
+                        catch
+                        {
+                        }
                     }
                 }
-            }
-            catch
-            {
-                foreach (Assembly dotNetDll in AppDomain.CurrentDomain.GetAssemblies())
+                catch
                 {
-                    //Protect load of DLL
-                    try
-                    {
-                        Type[] types = dotNetDll.GetTypes();
-                        foreach (Type t in types)
-                        {
-                            if (t.IsAbstract) continue;
-                            if (!t.IsSubclassOf(typeof(ARCOLBlock))) continue;
-
-                            //Protect instantiating class
-                            try
-                            {
-                                ConstructorInfo ctor = t.GetConstructor(new Type[] { typeof(int), typeof(EventHandler), typeof(Stream), });
-                                if (ctor == null) continue;
-
-                                ARCOLBlock arb = (ARCOLBlock)ctor.Invoke(new object[] { 0, null, null });
-                                if (!typeRegistry.ContainsKey(arb.ResourceType)) typeRegistry.Add(arb.ResourceType, arb.GetType());
-                                if (!tagRegistry.ContainsKey(arb.Tag)) tagRegistry.Add(arb.Tag, arb.GetType());
-                            }
-                            catch
-                            {
-                            }
-                        }
-                    }
-                    catch
-                    {
-                    }
                 }
             }
 
