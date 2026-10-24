@@ -111,14 +111,14 @@
   </Target>
   -->
   <ItemGroup>
-    <ProjectReference Include="..\..\CS System Classes\CS System Classes.csproj">
-      <Project>{00200E76-C245-42A7-B567-5C30EDBCE977}</Project>
-      <Name>CS System Classes</Name>
-      <Private>False</Private>
-    </ProjectReference>
     <ProjectReference Include="..\Settings\Settings.csproj">
       <Project>{374F37CF-1F27-4613-96FD-9B956A3D82B1}</Project>
       <Name>Settings</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CS System Classes\CS System Classes.csproj">
+      <Project>{00200E76-C245-42A7-B567-5C30EDBCE977}</Project>
+      <Name>CS System Classes</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
